@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+  color: #fff;
+}
+body {
+  background-color: rosybrown;
+}
+section {
+  width: 800px;
+  margin: 4rem auto;
+  padding: 2rem;
+}
+section h1 {
+  font-size: 2rem;
+  margin: 2rem;
+  text-align: center;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  margin: 1rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 10rem);
+}
+.place {
+  border: 2px solid #fff;
+  display: block;
+  margin: auto;
+  width: 10rem;
+  height: 10rem;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.place.taken {
+  cursor: not-allowed;
+}
+.nextPlayer {
+  margin: 1rem 0;
+}
+.btn {
+  display: block;
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  width: 6rem;
+  text-align: center;
+  padding: 0.5rem;
+  margin: 2rem 0;
+  transition: ease-in-out 0.3s;
+  &:hover {
+    background-color: #000;
+  }
+}
